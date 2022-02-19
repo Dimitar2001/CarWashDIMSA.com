@@ -1,0 +1,143 @@
+ /*Formatiranje na pozadinata*/
+body{
+   background-image: url('../sliki/PozadinaUSLUGI.jpg');
+   background-size: cover;
+   }
+   
+   /*Formatiranje na tekstot*/
+   p{
+       font-family:Georgia, 'Times New Roman', Times, serif;
+       font-size: 96px;
+       text-align: center;
+       color:rgb(255, 255, 255);
+       padding: 180px 13px;
+       border-radius: 3px;
+       text-transform: uppercase;
+   }
+   /*Boja na DIMSA*/
+   .DIMSA{
+       color: yellow;
+       font-family:inherit;
+   }
+   
+   /*Pozicija na lentata za menija*/
+   *{
+       padding:0;
+       margin: 0;
+       text-decoration: none;
+       list-style: none;
+       box-sizing: border-box;
+   
+   }
+   nav{
+       background-image:url('../sliki/crvengradient.jpg');
+       background-size:cover;
+       height: 80px;
+       width: 100%;
+   }
+   
+   /*Pozicija na logoto i formatiranje*/
+   label.logo{
+       color:white;
+       font-size: 35px;
+       line-height: 80px;
+       padding: 20 0;
+       font-weight: bold;
+   }
+   
+   
+   
+   /*Pozicija na menijata*/
+   nav ul{
+       float: right;
+       margin-right: 30px;   
+   }
+   /*Menijata da bidat vo linija*/
+   nav ul li{
+       display: inline-block;
+       line-height: 80px;
+       margin: 0 50px;
+   }
+   /*Menijata da bidat so podobar format*/
+   nav ul li a{
+       color:rgb(0, 0, 0);
+       font-size: 17px;
+       padding: 7px 13px;
+       border-radius: 3px;
+       text-transform: uppercase;
+   }
+   /*Boja pred da kliknis na menijata*/
+   a.active{
+       background:rgb(255, 238, 1);
+   }
+   /*Boja dur stoi so kursor na meni*/
+   a:hover{
+       background: rgb(255, 0, 0);
+       transition: .5s;
+   }
+   
+   /*Kopceto so tri linii pozicija i slicno*/
+   .checkbtn{
+       font-size: 30px;
+       color: white;
+       float: left;
+       padding-right: 20px;
+       line-height: 80px;
+       margin-left: 20px;
+       cursor: pointer;
+       display:unset
+   
+   }
+   /*Da bidi kliknato dugmeto*/
+   #check{
+       display: none;
+   }
+   
+   
+   @media (max-width:952px){
+       label.logo{
+           font-size: 30px;
+           padding-left: 500px;
+           
+       }
+       nav ul li a{
+           font-size: 16px;
+       }
+   }
+   
+   @media (max-width:858px){
+       .checkbtn{
+           display: block;
+       }
+       ul{
+           position: fixed;
+           width: 100%;
+           height: 100vh;
+           background: #502c50;
+           top: 80px;
+           left:-100%;
+           text-align: center;
+           transition: all .5s;
+       }
+       nav ul li{
+           display: block;
+           margin: 50px 0;
+           line-height: 30px;
+           
+       }
+       nav ul li a{
+           font-size: 20px;
+       }
+       a:hover, a.active{
+           background: none;
+           color: #0082e6;
+       }
+   }
+    /*Cenovnik pozicija kaj Uslugi*/
+    .Cenovnik{
+       margin: 400px;
+       margin-top: 100px;
+       position: relative;
+       } 
+   
+    
